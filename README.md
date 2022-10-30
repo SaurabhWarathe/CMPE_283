@@ -10,5 +10,13 @@ I worked with Saurabh for this assignment. On my machine, I retrieved the .c pro
 Along with Ravi I started by downloading the Makefile and the .c file on the VM, and added structs and definitions looking up in SDM for different capability region, added remaining msrs for each capability and also report_capability. For testing the code, i performed "make" command, to make the module, and inserted the module using insmod (using .ko file created) in kernel, and tracking the "dmesg". Initially there was a permission error, which we resolved using "sudo dmesg" command. I then created the git repo for the assignment, and i along with Ravi started pushing our code to the repository.<br>
 
 <h3>Steps followed:</h3>
-1. Retrieve the starter .c file and Mekefile from canvas. <br>
-2. Add the remaining code sections to the file.(struct, definitions and vm features)<br>
+1. Installed VMware Workstation 15.<br>
+2. Installed Linux Ububtu 22.04.1 with nested capabilities. <br>
+3. Verified if nested virtulisation is installed properly by checking sys/module/intel_/nested. <br>
+4. Retrieve the starter .c file and Mekefile from canvas. <br>
+5. Add the remaining code sections to the file.(struct, definitions and vm features)<br>
+6. Installed GCC <br>
+7. Add capabilities structs based on info from SDM and make calls to rdmsr and report_capibility in the .c file. <br>
+8. In the directory of the .c file and make file call 'sudo make'<br>
+9. Call 'sudo ismode ./cmpe283-1.ko'. <br>
+10. Call sudo dmesg to see capabilities. <br>
