@@ -12,6 +12,3 @@ Along with Ravi I started by downloading the Makefile and the .c file on the VM,
 <h3>Steps followed:</h3>
 1. Retrieve the starter .c file and Mekefile from canvas. <br>
 2. Add the remaining code sections to the file.(struct, definitions and vm features)<br>
-
-
-123
